@@ -1,0 +1,110 @@
+body{
+
+    background:linear-gradient(to left,rgb(2, 54, 56),rgb(1,10,10))
+}
+
+
+.Container{
+    text-align: center;
+}
+.header{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:50px;
+}
+
+
+.TicButton{
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: aquamarine;
+    font-size:larger;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.boxes{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: 180px;
+    width: 180px;
+    margin: 3px;
+    background-color: rgb(73, 104, 105);
+    border: 2px  rgb(86, 107, 108) solid;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+ 
+
+
+}
+.winner{
+    color:red;
+}
+.board {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+    width:600px ;
+    height: 600px;
+}
+
+
+.boxes img{
+    width:90px;
+    height: 90px;
+    margin: 40px 40px;
+    background-color: rgb(73, 104, 105) ;
+
+
+}
+@media (max-width: 768px) {
+    .header {
+        font-size: 24px; 
+        text-align: center;
+    }
+    .board{
+        width: 250px;
+        height: 100px;
+        margin-left: 90px;
+    }
+    .boxes{
+        width: 150px;
+        height: 150px
+    }
+    .boxes img{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .Container{
+        text-align: center;
+    }
+}
+@media (max-width: 568px) {
+    .header {
+        font-size: 24px; 
+    }
+    .board{
+        width: 250px;
+        height: 100px;
+        margin-left: 50px;
+        padding: 20px 20px;
+
+    }
+    .boxes{
+        width: 100px;
+        height: 100px;
+    }
+    .boxes img{
+        height: 50px;
+        margin-left: 25px;
+    }
+}
+
+
